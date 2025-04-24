@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <meta name="description" content="login form" />
+    <link rel="stylesheet" href="loginform.css"/>
+    <title>Login Form</title>
+  </head>
+
+  <body>
+    <center>
+      <!-- m -->
+      <div class="form-container">
+        <i>
+          <h1><u>Login Form</u></h1>
+          <form action="login.php" method="post"></form>
+          <div>
+            <label for="username">username :</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              size="15"
+              maxlength="40"
+              placeholder="enter your username"
+              autofocus  required
+            />
+          </div>
+          <div>
+            <label for="password">password :</label> 
+            <!-- comma lagao ya na lagao ki frk penda h -->
+            <input
+            id="password",
+              type="password", 
+              name="password",
+              size="15",
+              maxlength="40",
+              placeholder="enter your password"
+            />
+          </div>
+          <div>
+            <input type="radio", id="male", name="gender", value="male">
+            <label for="male">Male :</label>
+            <!-- for me id name hota h pr agr change ho gya toh text pr click krne se select nhi hoga fir waise krna padega kr dekh le tu bhul gya ho toh bsdk -->
+            <input type="radio" id="female", name="genders", value="female"> 
+            <!-- same names daalne pdte h  otherwise dono select ho jaenge yaha glt h -->
+            <label for="female">Female :</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bhula", name="bhula", value="yes">
+                <label for="bhula">I am not a robot</label>
+                </div>
+                <div>
+                        <select name="sections">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <!-- c and d me dono me value c h reference lele voting ka select kuch bhi karo bjp ya congress vote toh bjp ko hi jaega same wahi funda yaha pr h agr vale me same de di toh select krne pr bhio wo record nhi hoga db me  -->
+                            <option value="C">D</option>
+                            <option value="E">E</option>
+                    </div>
+          submit : <input type="submit" value="submit"
+        /></i>
+      </div>
+      <!-- pattern tag bhi hota h kuch  -->
+    </form>
+    </center>
+    <style>
+      .form-container {
+        width: 120%;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-top: 15%;
+      }
+    </style>
+  </body>
+</html>
